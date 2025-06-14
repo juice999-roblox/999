@@ -1,9 +1,9 @@
-Ahk:=A_AhkPath
+Ahk := " FindAHKPath() "
 
 #NoTrayIcon
 #SingleInstance off
 ScriptGuard1()
-ScriptGuard1()  ; By TAC109
+ScriptGuard1()
 {
   For i,ahk in ["#1", ">AUTOHOTKEY SCRIPT<"]
   if (rc:=DllCall("FindResource", "Ptr",0, "Str",ahk, "Ptr",10, "Ptr"))
